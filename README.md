@@ -15,10 +15,7 @@ If you're from Linux and want to compile to Windows, do
 ```
 $ GOOS=windows GOARCH=386 go build -o patorevamp.exe main.go
 ```
-Else
-```
-GOOS=linux GOARCH=arm go build -o patorevamp main.go 
-```
+
 Ebiten does not support MacOS, so these are the only two systems that you may compile to.
 
 ## More information
