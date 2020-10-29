@@ -1,12 +1,27 @@
 # Pato Goes For a Walk Revamped
 ## Building the game
-You'll need ebiten and golang. Check go.mod for requirements.
+You'll need ebiten and golang. The dependencies will install on building.
 ```
 $ git clone https://github.com/eviluser7/pato-revamp.git
 $ cd pato-revamp
+$ go build -o patorevamp
 $ go run main.go
 ```
-You may as well check how to install ebiten over here: 
+In case of using Windows systems, add .exe to the `patorevamp`
+
+Cross-Compile
+------
+If you're from Linux and want to compile to Windows, do
+```
+$ GOOS=windows GOARCH=386 go build -o patorevamp.exe main.go
+```
+Else
+```
+GOOS=linux GOARCH=arm go build -o patorevamp main.go 
+```
+
+## More information
+You may as well check how to install ebiten over here, for later use: 
 
 https://ebiten.org/documents/install.html
 
