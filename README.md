@@ -19,6 +19,7 @@ Else
 ```
 GOOS=linux GOARCH=arm go build -o patorevamp main.go 
 ```
+Ebiten does not support MacOS, so these are the only two systems that you may compile to.
 
 ## More information
 You may as well check how to install ebiten over here, for later use: 
